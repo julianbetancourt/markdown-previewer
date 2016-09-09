@@ -1,0 +1,38 @@
+* {
+  box-sizing: border-box;
+}
+.App {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-field {
+  width: 97%;
+  margin: 0 auto;
+  position: relative;
+  height: 40vh;
+}
+
+.input-field textarea {
+  border: 1px solid grey;
+  width: 100%;
+  position: absolute;
+  left: -3px;
+  height: 100%;
+  padding: 1em;
+}
+
+@media (min-width: 768px) {
+  .App {
+    flex-direction: row;
+  }
+  .input-field {
+    width: 50%;
+    margin: 0 1em 0 .3em;
+    height: 100vh;
+  }
+  .output {
+    width: 50%;
+    padding: 1em;
+  }
+}
